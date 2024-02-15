@@ -112,24 +112,13 @@ body {
     line-height: var(--text-line-height);
 }
 
-/* #megamenu-content {
-    background: none;
-}
-
-#megamenu-content::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image:  url(https://cdn.pixabay.com/photo/2017/07/04/12/53/chernobyl-2471003_1280.jpg);
+#megamenu-content {
+    background-image:  url(./obscurefreeman/background/chernobyl.png);
     background-repeat: repeat;
     background-position: right;
     background-size: cover;
-    filter: brightness(0.1) blur(5px);
-    z-index: -1;
-} */
+}
+
 
 #write {
     max-width: 914px;
@@ -923,7 +912,9 @@ footer {
     background-color: rgb(0, 0, 0);
 } */
 .megamenu-menu {
-    background-color: var(--side-bar-bg-color);
+    /* background-color: var(--side-bar-bg-color); */
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
 }
 
 
