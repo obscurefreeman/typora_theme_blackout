@@ -6,10 +6,10 @@
     /* --of-theme-color-dark: #2a3139; */
     --of-theme-color-dark: #2a3932;
     
-    --of-darkest-color: #101113;
-    --of-darker-color: #15171a;
-    --of-dark-color: #21252b;
-    --of-dark-color2: #1c1e21;
+    --of-darkest-color: #101312;
+    --of-darker-color: #151a17;
+    --of-dark-color: #212b27;
+    --of-dark-color2: #1c211f;
     --of-strong: #4a89dc;
     --of-strong-code: #ff795e;
     --of-font-size: 16.5px; /*字体大小*/
@@ -478,6 +478,8 @@ table {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
 }
 
 th,
@@ -524,6 +526,34 @@ table a {
     /* variable */
 }
 
+table tr {
+    border-top: 1px solid #212121;
+    margin: 0;
+    padding: 0;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #383838;
+    border-bottom: 0;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #383838;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
 /* th,
 td {
     border: solid 1px #544e47;
@@ -531,21 +561,21 @@ td {
 
 
 /* 设置表格头部行的样式 */
-th,
+/* th,
 
 th {
     background-color: var(--table-thead-color);
-}
+} */
 
 /* 设置奇偶行的背景颜色 */
 
-tr:nth-child(2n) {
+/* tr:nth-child(2n) {
     background-color: var(--table-bg-darker-color);
 }
 
 tr:nth-child(2n + 1) {
     background-color: var(--table-bg-color);
-}
+} */
 
 .task-list {
     padding-left: 0;
@@ -634,7 +664,8 @@ tr:nth-child(2n + 1) {
     padding: 1rem;
     border-radius: 8px;
     line-height: 1.45;
-    background: transparent;
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
     font-family: var(--ofcodetext);
 }
 
@@ -821,7 +852,6 @@ footer {
     backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
     border: none !important;
     background: none;
-    background-color: var(--footer-bg-color);
 }
 /* footer {
     color: inherit;
@@ -867,16 +897,17 @@ footer {
     border: 1px grey solid;
 }
 
-#recent-file-panel thead tr {
-    background-color: var(--table-thead-color);
+#recent-file-panel tbody {
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
 }
 
 #recent-file-panel tbody tr:nth-child(2n) {
-    background-color: var(--table-bg-color2);
+    background: none;
 }
 
 #recent-file-panel tbody tr:nth-child(2n + 1) {
-    background-color: var(--table-bg-darker-color);
+    background: none;
 }
 
 
