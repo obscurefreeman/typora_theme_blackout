@@ -390,6 +390,7 @@ tt,
 var {
     background: rgba(255, 255, 255, 0.05);
     color: var(--md-code-color);
+    border-radius: 4px;
 }
 
 kbd {
