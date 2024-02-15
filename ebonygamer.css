@@ -61,8 +61,10 @@
     --codemirror-color: var(--of-dark-color);
     /* 右键菜单按下 */
     --menu-item-container-btn-hover: var(--of-dark-color2);
-    /* 右键菜单按钮 */
+    /* 右键菜单按钮边框 */
     --menu-item-container-btn: var(--of-theme-color-dark);
+    /* 右键菜单和字数统计 */
+    --context-menu-color: var(--of-darkest-color);
     
 
     --ofcodetext: Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
@@ -754,12 +756,12 @@ h6.md-focus .md-attr,
     border-bottom: 1px dashed grey;
 }
 
-/** UI for electron */
+/* 右键菜单和字数统计 */
 
 .context-menu,
 #spell-check-panel,
 #footer-word-count-info {
-    background-color: #272625;
+    background-color:  var(--context-menu-color);
 }
 
 .context-menu.dropdown-menu .divider,
@@ -767,6 +769,8 @@ h6.md-focus .md-attr,
     background-color: #777777;
     opacity: 1;
 }
+
+/* 页尾模糊 */
 
 footer {
     backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
