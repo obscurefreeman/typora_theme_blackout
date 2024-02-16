@@ -1,48 +1,99 @@
 @import "obscurefreeman/mermaid.dark.css";
 @import "obscurefreeman/codeblock.dark.css";
-@import "obscurefreeman/sourcemode.dark.css";
-@import "obscurefreeman/font.css";
 
 :root {
-    --bg-color: #1e1e1e;
+    --of-theme-color: #ff9100;
+    --of-theme-color-dark: #4b4b46;
+    --of-darkest-color: #2d2d2d;
+    --of-darker-color: #1e1e1e;
+    --of-dark-color: #292929;
+    --of-dark-color2: #202020;
+    --of-dark-color3:#404040;
+    --of-dark-color4:#232323;
+    --of-dark-color5:#222222;
+    --of-dark-color6:#1b1b1b;
+    --of-strong: white;
+    --of-strong-code: #00ffa6;
+    --of-font-size: 14px; /*字体大小*/
+    --of-selection: #4a89dc;
+    --of-selection-text: white;
+    --of-text-color: #c6c5b8;
+
+    --bg-color: var(--of-darker-color);
     /* 侧边栏颜色 */
-    --side-bar-bg-color: #2d2d2d;
-    --text-color: #d4d4d4;
+    --side-bar-bg-color: var(--of-darkest-color);
+    --text-color: var(--of-text-color);
     /* 这才是文字颜色 */
-    --text-color-main: #c6c5b8;
-    --select-text-bg-color: #3c3c3c;
+    --text-color-main: var(--of-text-color);
+    /* 选中文字的颜色 */
+    --select-text-bg-color: var(--of-theme-color-dark);
     /* 被激活的目录背景 */
-    --item-hover-bg-color: #404040;
+    --item-hover-bg-color: var(--of-dark-color3);
     --control-text-color: #b7b7b7;
     --control-text-hover-color: #fff;
     --window-border: 1px solid #333;
     /* 被激活的文件背景 */
-    --active-file-bg-color: #232323;
-    --active-file-border-color: #ff9100;
-    --primary-color: #ff9100;
+    --active-file-bg-color: var(--of-dark-color4);
+    --active-file-border-color: var(--of-theme-color);
+    --primary-color: var(--of-theme-color);
     --active-file-text-color: #fff;
     --item-hover-text-color: #fff;
-    --rawblock-edit-panel-bd: #31302e;
+    /* 编辑HTML文件 */
+    --rawblock-edit-panel-bd: var(--of-dark-color);
     --search-select-bg-color: #3c3c3c;
     
-    --code-bg-color: #292929;
+    --code-bg-color:  var(--of-dark-color);
     /* --code-bg-color: #31302e; */
     --footer-bg-color: var(--side-bar-bg-color);
-    --table-bg-darker-color: #202020;
-    --table-bg-color: #222222;
-    --table-thead-color: #1b1b1b;
-    --md-code-color: #00ffa6;
-    --table-edit-color: #242322;
+    --table-bg-darker-color:   var(--of-dark-color2);
+    --table-bg-color:   var(--of-dark-color5);
+    --table-bg-color2:   var(--of-darkest-color);
+    --table-thead-color: var(--of-dark-color6);
+    --md-code-color: var(--of-strong-code);
+    --table-edit-color: var(--of-darkest-color);
     --task-list-border-color: #ffffff;
     --task-list-black-border-color: #000000;
     /* --task-list-bg-color: rgb(176, 21, 21); */
     --task-list-checked-color: #00ffa6;
+    /* 设置导航栏选中的背景颜色 */
+    --nav-group-item-color: var(--of-theme-color-dark);
+    --select-background: var(--of-theme-color-dark);
+    --other-main-color: var(--of-theme-color);
+    --hover-color: var(--of-dark-color2);
+    /* 引用的背景颜色 */
+    --blockquote-color: var(--of-dark-color);
+    /* 源代码被激活的颜色 */
+    --codemirror-color: var(--of-dark-color);
+    /* 右键菜单按下 */
+    --menu-item-container-btn-hover: var(--of-dark-color2);
+    /* 右键菜单按钮边框 */
+    --menu-item-container-btn: var(--of-theme-color-dark);
+    /* 右键菜单和字数统计 */
+    --context-menu-color: var(--of-darkest-color);
+    /* tooltip颜色（右键菜单按按钮时显示提示的颜色） */
+    --tooltip-color: var(--of-darkest-color);
+    /* tooltip文字颜色*/
+    --tooltip-text-color: white;
+    /* 滚动条颜色 */
+    --scrollbar-color: var(--of-theme-color-dark);
+    /* 源代码模式光标 */
+    --code-cursor-color: var(--of-theme-color);
+
+    --ofcodetext: Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+    --oftext: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    --text-font: var(--oftext); /*正文字体*/
+    --title-font: var(--oftext); /*标题字体*/
+    --text-line-height: 1.7; /*正文行间距*/
+    --code-line-height: 1.6; /*代码块行间距*/
+    --p-spacing: 0.8rem; /*段间距*/
+
 }
 
-
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
 html {
-    font-size: 14px;
+    font-size: var(--of-font-size);
     -webkit-font-smoothing: antialiased;
 }
 
@@ -50,10 +101,9 @@ html,
 body {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    background: #403e36;
     background: var(--bg-color);
     fill: currentColor;
-    line-height: 1.625rem;
+    line-height: var(--text-line-height);
 }
 
 #write {
@@ -87,15 +137,15 @@ div.code-tooltip-content {
 
 div.code-tooltip,
 .md-hover-tip .md-arrow:after {
-    background: #31302e;
+    background: var(--code-bg-color);
 }
 
 .native-window #md-notification {
-    border: 1px solid #7d7870;
+    border: 1px solid  var(--select-background);
 }
 
 .popover.bottom > .arrow:after {
-    border-bottom-color: #31302e;
+    border-bottom-color: var(--code-bg-color);
 }
 
 html,
@@ -278,15 +328,15 @@ audio:not([controls]) {
 }
 
 ::-moz-selection {
-    background: #4a89dc;
-    color: #fff;
+    background:  var(--of-selection);
+    color:  var(--of-selection-text);
     text-shadow: none;
 }
 
 *.in-text-selection,
 ::selection {
-    background: #4a89dc;
-    color: #fff;
+    background: var(--of-selection);
+    color:  var(--of-selection-text);
     text-shadow: none;
 }
 
@@ -316,6 +366,7 @@ th,
 dt,
 strong {
     font-weight: bold;
+    color: var(--of-strong);
 }
 
 i,
@@ -324,21 +375,6 @@ dfn,
 cite {
     font-style: italic;
 }
-
-/* blockquote {
-    padding-left: 1.875rem;
-    margin: 0 0 1.875rem 1.875rem;
-    border-left: solid 2px #545047;
-    padding-left: 30px;
-    margin-top: 35px;
-} */
-
-/* blockquote {
-    padding: 20px;
-    position: relative;
-    border-radius: 8px;
-    border: 1px solid var(--primary-color);
-} */
 
 blockquote {
     padding: 20px;
@@ -377,7 +413,6 @@ blockquote code {
     margin-top: 10px;
 }
 
-
 pre,
 code,
 kbd,
@@ -392,13 +427,14 @@ tt,
 var {
     background: rgba(255, 255, 255, 0.05);
     color: var(--md-code-color);
+    border-radius: 4px;
 }
 
 kbd {
     padding: 2px 4px;
     font-size: 90%;
     color: #fff;
-    background-color: #31302e;
+    background-color: var(--code-bg-color);
     border-radius: 3px;
     box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
 }
@@ -415,10 +451,11 @@ pre.md-fences {
     word-wrap: normal;
     background-color: var(--code-bg-color);
     border: none;
+    font-family: var(--ofcodetext);
 }
 
 .CodeMirror-gutters {
-    background: #31302e;
+    background: var(--code-bg-color);
     border-right: 1px solid transparent;
 }
 
@@ -455,7 +492,8 @@ a {
 }
 
 hr {
-    background: #544d47;
+    background: var(--other-main-color);
+    /* 下划线颜色 */
     /* variable */
 }
 
@@ -476,20 +514,9 @@ a:hover {
     color: #81b1db;
 }
 
-b,
-th,
-dt,
-strong {
-    color: #DEDEDE;
-    /* variable */
-}
-
 mark {
-    background: #D3D40E;
-}
-
-blockquote {
-    color: #9DA2A6;
+    background: var(--other-main-color);
+    /* color: white; */
 }
 
 table a {
@@ -562,15 +589,15 @@ tr:nth-child(2n + 1) {
 /** quick open **/
 .auto-suggest-container {
     border: 0px;
-    background-color: #656152;
+    background-color: var(--select-background);
 }
 
 #typora-quick-open {
-    background-color: #655e52;
+    background-color: var(--select-background);
 }
 
 #typora-quick-open input{
-    background-color: #655e52;
+    background-color: var(--select-background);
     border: 0;
     border-bottom: 1px solid grey;
 }
@@ -582,12 +609,12 @@ tr:nth-child(2n + 1) {
 
 .typora-quick-open-item.active,
 .typora-quick-open-item:hover {
-    background-color: #FF8C00;
+    background-color: var(--other-main-color);
     color: white;
 }
 
 .typora-quick-open-item:hover {
-    background-color: rgba(255, 204, 0, 0.8);
+    background-color:  var(--select-background);
 }
 
 .typora-search-spinner > div {
@@ -608,6 +635,7 @@ tr:nth-child(2n + 1) {
     border-radius: 8px;
     line-height: 1.45;
     background: transparent;
+    font-family: var(--ofcodetext);
 }
 
 .btn,
@@ -659,7 +687,7 @@ tr:nth-child(2n + 1) {
 }
 
 #write div.md-toc-tooltip {
-    background-color: #403b36;
+    background-color:  var(--select-background);
 }
 
 .dropdown-menu .btn:hover,
@@ -671,7 +699,7 @@ tr:nth-child(2n + 1) {
 }
 
 #toc-dropmenu {
-    background: rgba(59, 55, 50, 0.93);
+    background:  var(--select-background);
     border: 1px solid rgba(253, 253, 253, 0.15);
 }
 
@@ -719,7 +747,7 @@ h6.md-focus .md-attr,
 }
 
 .md-comment {
-    color: #FF8C00;
+    color: var(--other-main-color);
     opacity: 0.8;
 }
 
@@ -758,7 +786,7 @@ h6.md-focus .md-attr,
 }
 
 .md-table-resize-popover {
-    background-color: #31302e;
+    background-color: var(--code-bg-color);
 }
 
 .form-inline .input-group .input-group-addon {
@@ -769,12 +797,12 @@ h6.md-focus .md-attr,
     border-bottom: 1px dashed grey;
 }
 
-/** UI for electron */
+/* 右键菜单和字数统计 */
 
 .context-menu,
 #spell-check-panel,
 #footer-word-count-info {
-    background-color: #272625;
+    background-color:  var(--context-menu-color);
 }
 
 .context-menu.dropdown-menu .divider,
@@ -782,6 +810,8 @@ h6.md-focus .md-attr,
     background-color: #777777;
     opacity: 1;
 }
+
+/* 页尾模糊 */
 
 footer {
     backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
@@ -857,9 +887,11 @@ footer {
     background-color: var(--hover-bg-color1);
 } */
 
+/* 一体化菜单 */
+
 .megamenu-menu-panel .dropdown-menu > li > a {
     color: inherit;
-    background-color: #3a352f;
+    background-color: var(--select-background);
     text-decoration: none;
 }
 
@@ -901,10 +933,6 @@ footer {
     border-top: 0;
 }
 
-#recent-file-panel tbody tr:nth-child(2n-1) {
-    background-color: transparent !important;
-}
-
 .megamenu-menu-panel tbody tr:hover td:nth-child(2) {
     color: inherit;
 }
@@ -933,7 +961,18 @@ footer {
 }
 
 #w-unpin {
-    background-color: #FFA500;
+    background-color:  var(--other-main-color);
+}
+
+/* 放大缩小的颜色 */
+#top-titlebar .toolbar-icon.btn:hover {
+    color: var(--item-hover-text-color);
+    background-color: var(--of-theme-color-dark);
+}
+
+/* 关闭按钮的颜色 */
+#top-titlebar #w-close:hover {
+    background-color: #e81123 !important;
 }
 
 #top-titlebar, #top-titlebar * {
@@ -943,12 +982,14 @@ footer {
 .typora-sourceview-on #toggle-sourceview-btn,
 #footer-word-count:hover,
 .ty-show-word-count #footer-word-count {
-    background: #333333;
+    background: var(--hover-color);
+    /* 字数统计按下去的颜色 */
 }
 
 #toggle-sourceview-btn:hover {
-    color: #eee;
-    background: #333333;
+    color: white;
+    background: var(--hover-color);
+    /* 查看源代码按下去的颜色 */
 }
 
 /** focus mode */
@@ -972,7 +1013,7 @@ footer {
 
 .on-focus-mode .md-focus,
 .on-focus-mode .md-focus-container {
-    color: #fff;
+    color: white;
 }
 
 .on-focus-mode #typora-source .CodeMirror-code>*:not(.CodeMirror-activeline) * {
@@ -982,7 +1023,7 @@ footer {
 
 /*diagrams*/
 #write .md-focus .md-diagram-panel {
-    border: 1px solid #ddd;
+    border: 1px solid white;
     margin-left: -1px;
     width: calc(100% + 2px);
 }
@@ -1000,7 +1041,7 @@ footer {
 .active-tab-files #info-panel-tab-file:hover,
 .active-tab-outline #info-panel-tab-outline,
 .active-tab-outline #info-panel-tab-outline:hover {
-    color: #eee;
+    color: white;
 }
 
 .sidebar-footer-item:hover,
@@ -1053,8 +1094,21 @@ footer {
 }
 
 #ty-tooltip {
-    background-color: black;
-    color: #eee;
+    background-color:  var(--tooltip-color);
+    color: var(--tooltip-text-color);
+}
+
+/* 右键菜单按下 */
+.menu-item-container:hover {
+    background-color: var(--menu-item-container-btn-hover);
+}
+
+/* 右键菜单按钮 */
+.menu-item-container a.menu-style-btn {
+    /* background: var(--menu-item-container-btn); */
+    border: 1px solid;
+    border-color: var(--menu-item-container-btn);
+    border-radius: 5px;
 }
 
 .md-task-list-item>input {
@@ -1064,23 +1118,23 @@ footer {
 }
 
 .md-mathjax-midline {
-    background-color: #6b6457;
+    background-color:  var(--select-background);
     border-bottom: none;
 }
 
 footer.ty-footer {
-    border-color: #656565;
+    border-color: var(--select-background);
 }
 
 .ty-preferences .btn-default {
     background: transparent;
 }
 .ty-preferences .btn-default:hover {
-    background: #6b6b57;
+    background: var(--select-background);
 }
 
 .ty-preferences select {
-    border: 1px solid #989698;
+    border: 1px solid #9a9a9a;
     height: 21px;
 }
 
@@ -1092,8 +1146,8 @@ footer.ty-footer {
 }
 
 .ty-preferences input[type="search"] {
-    border-color: #31302e;
-    background: #31302e;
+    border-color: var(--code-bg-color);
+    background: var(--code-bg-color);
     line-height: 22px;
     border-radius: 6px;
     color: white;
@@ -1128,16 +1182,16 @@ footer.ty-footer {
 }
 
 .nav-group-item:active {
-    background-color: #544f47 !important;
+    background-color:  var(--nav-group-item-color) !important;
 }
 
 .md-search-hit {
-    background: rgba(199, 140, 60, 0.81);
-    color: #eee;
+    background:  var(--select-background);
+    color: white;
 }
 
 .md-search-hit * {
-    color: #eee;
+    color: white;
 }
 
 #md-searchpanel input {
@@ -1151,4 +1205,49 @@ footer.ty-footer {
 
 .clear-btn-icon {
     top: 8px;
+}
+
+
+/* 代码模式 */
+
+.cm-s-typora-default .cm-header, 
+.cm-s-typora-default .cm-property
+{
+    color: var(--other-main-color);
+}
+
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor{
+    border-left: 3px solid var(--code-cursor-color);
+}
+
+.cm-s-typora-default .cm-comment {
+    color: #ffffff;
+}
+
+.cm-s-typora-default .cm-string {
+    color: #00bfff
+}
+
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number {
+    color: #aa00ff;
+    font-style: italic;
+}
+
+.cm-s-typora-default .cm-link {
+    color: #95B94B;
+}
+
+.cm-s-typora-default .CodeMirror-activeline-background {
+    background: var(--codemirror-color);
+}
+
+.cm-s-typora-default .cm-comment, .cm-s-typora-default .cm-code {
+	color: #e1bb8a;
+}
+
+/*滚动条*/
+::-webkit-scrollbar-thumb
+{
+  border-radius: 8px;
+  background-color: var(--scrollbar-color);
 }
