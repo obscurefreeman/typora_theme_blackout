@@ -10,7 +10,7 @@
     --of-darker-color: #151a17;
     --of-dark-color: #212b27;
     --of-dark-color2: #1c211f;
-    --of-strong: #91ffc8;
+    --of-strong: white;
     --of-strong-code: #ff795e;
     --of-font-size: 16.5px; /*字体大小*/
     --of-selection: #4a89dc;
@@ -837,8 +837,8 @@ h6.md-focus .md-attr,
 /* 右键菜单和字数统计 */
 
 .context-menu,
-#spell-check-panel,
-#footer-word-count-info {
+#footer-word-count-info,
+#spell-check-panel {
     backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
     background: none;
     border-radius: 8px;
@@ -1141,6 +1141,7 @@ footer {
 /* 右键菜单按钮 */
 .menu-item-container a.menu-style-btn {
     /* background: var(--menu-item-container-btn); */
+    background: none;
     border: 1px solid;
     border-color: var(--menu-item-container-btn);
     border-radius: 5px;
