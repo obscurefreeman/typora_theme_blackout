@@ -78,6 +78,8 @@
     --scrollbar-color: var(--of-theme-color-dark);
     /* 源代码模式光标 */
     --code-cursor-color: var(--of-theme-color);
+    /* 返回按钮 */
+    --back-btn-color: var(--of-theme-color);
 
     --ofcodetext: Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
     --oftext: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -240,6 +242,19 @@ h6 {
     color: white;
 }
 
+img {
+    border-radius: 8px;
+    border-left: none !important;
+    border-right: none !important;
+    max-width: 60%;
+}
+
+@media (max-width: 800px) {
+    img {
+        max-width: 100%;
+    }
+}
+
 @media (min-width: 980px) {
     h3.md-focus:before,
     h4.md-focus:before,
@@ -386,6 +401,7 @@ blockquote {
     font-size: 16px;
     line-height: 1.5;
     /* color: var(--text-color); */
+    color: white
 }
 
 blockquote::before {
@@ -888,6 +904,15 @@ footer {
 } */
 
 /* 一体化菜单 */
+
+#megamenu-back-btn {
+    border-color: transparent;
+    color: var(--back-btn-color);
+}
+
+.megamenu-menu-header:hover {
+    background-color: var(--item-hover-bg-color);
+}
 
 .megamenu-menu-panel .dropdown-menu > li > a {
     color: inherit;
