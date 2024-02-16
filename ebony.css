@@ -315,7 +315,7 @@ iframe,
 .wp-audio-shortcode,
 .wp-video-shortcode {
     margin-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--p-spacing);
     /* 24px */
 }
 
