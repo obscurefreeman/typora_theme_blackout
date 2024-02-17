@@ -80,6 +80,8 @@
     --code-cursor-color: var(--of-theme-color);
     /* 返回按钮 */
     --back-btn-color: var(--of-theme-color);
+    /* 距离底部 */
+    --write-padding-bottom: 400px;
 
     --ofcodetext: Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
     --oftext: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -110,6 +112,7 @@ body {
 
 #write {
     max-width: 914px;
+    padding-bottom: var(--write-padding-bottom);
 }
 
 
@@ -247,6 +250,10 @@ img {
     border-left: none !important;
     border-right: none !important;
     max-width: 60%;
+    /* 居中 */
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
 }
 
 @media (max-width: 800px) {
@@ -1194,8 +1201,16 @@ footer.ty-footer {
     line-height: 26px;
 }
 
+/*滚动条*/
+
+::-webkit-scrollbar {
+    width: 8px;
+}  
+
 ::-webkit-scrollbar-thumb {
     background: rgba(230, 230, 230, 0.30);
+    border-radius: 3px;
+    background-color: var(--scrollbar-color);
 }
 
 ::-webkit-scrollbar-thumb:active {
@@ -1268,11 +1283,4 @@ footer.ty-footer {
 
 .cm-s-typora-default .cm-comment, .cm-s-typora-default .cm-code {
 	color: #e1bb8a;
-}
-
-/*滚动条*/
-::-webkit-scrollbar-thumb
-{
-  border-radius: 8px;
-  background-color: var(--scrollbar-color);
 }
