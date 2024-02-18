@@ -342,26 +342,30 @@ mjx-container { break-inside: avoid; }
 @import "";
 
 :root {
-    --of-theme-color: #a391ff;
-    --of-theme-color-dark: #414164;
-    --of-darkest-color: #1f2025;
-    --of-darker-color: #25272e;
-    --of-dark-color: #2b2c33;
-    --of-dark-color2: #222227;
-    --of-strong: #ff6666;
-    --of-strong-code: #00ffa6;
+    --of-theme-color: #91ffc8;
+    /* --of-theme-color-dark: #2a3139; */
+    --of-theme-color-dark: #2a3932;
+    
+    --of-darkest-color: #101312;
+    --of-darker-color: #151a17;
+    --of-dark-color: #212b27;
+    --of-dark-color2: #1c211f;
+    --of-strong: white;
+    --of-strong-code: #ff795e;
     --of-font-size: 16.5px; /*字体大小*/
     --of-selection: #4a89dc;
     --of-selection-text: white;
+    --of-link-color: #91ffc8;
 
     --bg-color: var(--of-darker-color);
+    --bg-color-megamenu: #15171a;
     /* 侧边栏颜色 */
     --side-bar-bg-color: var(--of-darkest-color);
     --text-color: white;
     /* 这才是文字颜色 */
     --text-color-main: white;
     /* 选中文字的颜色 */
-    --select-text-bg-color: var(--of-theme-color-dark);
+    --select-text-bg-color: var(--of-selection);
     /* 被激活的目录背景 */
     --item-hover-bg-color:  var(--of-dark-color);
     --control-text-color: #b7b7b7;
@@ -438,13 +442,37 @@ html,
 body {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    background: var(--bg-color);
+    /* background: var(--bg-color); */
+    background: 
+    linear-gradient(
+        to top,
+        rgba(0,0,0,0) 0%,
+        var(--bg-color) 100%
+    ),
+    radial-gradient(
+        circle at 50% 100%,
+        var(--of-theme-color-dark) 0%,
+        black 100%
+    );
+    background-attachment: fixed;
     fill: currentColor;
     line-height: var(--text-line-height);
 }
 
+#megamenu-content {
+    background-image:  url(file:///C://Users//Lenovo//AppData//Roaming//Typora/themes/obscurefreeman/background/chernobyl.png);
+    background-repeat: repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+
 #write {
     max-width: 914px;
+
+    /* background: none;
+
+    min-height: calc(100% - 48px); */
 }
 
 
@@ -471,6 +499,11 @@ div.code-tooltip-content {
     color: var(--text-color-main);
     border-color: transparent;
 }
+
+/* .code-tooltip input {
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
+} */
 
 div.code-tooltip,
 .md-hover-tip .md-arrow:after {
@@ -724,8 +757,10 @@ blockquote {
     margin: 2em 0;
     border-left: solid 5px var(--other-main-color);
     padding: 1.5em;
-    background: var(--blockquote-color);
+    /* background: var(--blockquote-color); */
     color: white;
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
 }
 
 pre,
@@ -742,6 +777,7 @@ tt,
 var {
     background: rgba(255, 255, 255, 0.05);
     color: var(--md-code-color);
+    /* box-shadow: 0 0 2px var(--md-code-color); */
     border-radius: 4px;
 }
 
@@ -764,13 +800,15 @@ pre.md-fences {
     padding: 0.5rem !important;
     border-radius: 8px;
     word-wrap: normal;
-    background-color: var(--code-bg-color);
+    background:none;
+    /* background-color: var(--code-bg-color); */
     border: none;
     font-family: var(--ofcodetext);
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
 }
 
 .CodeMirror-gutters {
-    background: var(--code-bg-color);
+    background: none;
     border-right: 1px solid transparent;
 }
 
@@ -793,6 +831,8 @@ table {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
 }
 
 th,
@@ -817,7 +857,7 @@ h1 {
 }
 
 a {
-    color: var(--primary-color);
+    color: var(--of-link-color);
     text-decoration: underline;
 }
 
@@ -839,6 +879,35 @@ table a {
     /* variable */
 }
 
+table tr {
+    border-top: 1px solid #212121;
+    margin: 0;
+    padding: 0;
+}
+table tr th {
+    font-weight: bold;
+    color: var(--other-main-color);
+    border: 1px solid #383838;
+    border-bottom: 0;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #383838;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
 /* th,
 td {
     border: solid 1px #544e47;
@@ -846,21 +915,21 @@ td {
 
 
 /* 设置表格头部行的样式 */
-th,
+/* th,
 
 th {
     background-color: var(--table-thead-color);
-}
+} */
 
 /* 设置奇偶行的背景颜色 */
 
-tr:nth-child(2n) {
+/* tr:nth-child(2n) {
     background-color: var(--table-bg-darker-color);
 }
 
 tr:nth-child(2n + 1) {
     background-color: var(--table-bg-color);
-}
+} */
 
 .task-list {
     padding-left: 0;
@@ -949,7 +1018,8 @@ tr:nth-child(2n + 1) {
     padding: 1rem;
     border-radius: 8px;
     line-height: 1.45;
-    background: transparent;
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
     font-family: var(--ofcodetext);
 }
 
@@ -1030,6 +1100,8 @@ tr:nth-child(2n + 1) {
     box-shadow: none;
     border-right: 1px dashed;
     border-right: none;
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
 }
 
 .sidebar-tabs {
@@ -1101,7 +1173,8 @@ h6.md-focus .md-attr,
 }
 
 .md-table-resize-popover {
-    background-color: var(--code-bg-color);
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
 }
 
 .form-inline .input-group .input-group-addon {
@@ -1115,9 +1188,11 @@ h6.md-focus .md-attr,
 /* 右键菜单和字数统计 */
 
 .context-menu,
-#spell-check-panel,
-#footer-word-count-info {
-    background-color:  var(--context-menu-color);
+#footer-word-count-info,
+#spell-check-panel {
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
+    background: none;
+    border-radius: 8px;
 }
 
 .context-menu.dropdown-menu .divider,
@@ -1132,7 +1207,6 @@ footer {
     backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
     border: none !important;
     background: none;
-    background-color: var(--footer-bg-color);
 }
 /* footer {
     color: inherit;
@@ -1154,7 +1228,7 @@ footer {
 
 .megamenu-content,
 .megamenu-opened header {
-    background: var(--bg-color);
+    background: var(--bg-color-megamenu);
 }
 
 .megamenu-menu-panel h2,
@@ -1178,16 +1252,17 @@ footer {
     border: 1px grey solid;
 }
 
-#recent-file-panel thead tr {
-    background-color: var(--table-thead-color);
+#recent-file-panel tbody {
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
 }
 
 #recent-file-panel tbody tr:nth-child(2n) {
-    background-color: var(--table-bg-color2);
+    background: none;
 }
 
 #recent-file-panel tbody tr:nth-child(2n + 1) {
-    background-color: var(--table-bg-darker-color);
+    background: none;
 }
 
 
@@ -1232,7 +1307,9 @@ footer {
     background-color: rgb(0, 0, 0);
 } */
 .megamenu-menu {
-    background-color: var(--side-bar-bg-color);
+    /* background-color: var(--side-bar-bg-color); */
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
 }
 
 
@@ -1422,14 +1499,20 @@ footer {
     color: var(--tooltip-text-color);
 }
 
-/* 右键菜单按下 */
-.menu-item-container:hover {
+/* 右键菜单按下（暂时不用） */
+/* .menu-item-container:hover {
     background-color: var(--menu-item-container-btn-hover);
-}
+} */
+
+/* .menu-item-container:active {
+    animation: buttonClickAnimation 0.3s;
+} */
+
 
 /* 右键菜单按钮 */
 .menu-item-container a.menu-style-btn {
     /* background: var(--menu-item-container-btn); */
+    background: none;
     border: 1px solid;
     border-color: var(--menu-item-container-btn);
     border-radius: 5px;
@@ -1493,16 +1576,8 @@ footer.ty-footer {
     line-height: 26px;
 }
 
-/*滚动条*/
-
-::-webkit-scrollbar {
-    width: 8px;
-}  
-
 ::-webkit-scrollbar-thumb {
     background: rgba(230, 230, 230, 0.30);
-    border-radius: 3px;
-    background-color: var(--scrollbar-color);
 }
 
 ::-webkit-scrollbar-thumb:active {
@@ -1578,9 +1653,37 @@ footer.ty-footer {
 }
 
 
-</style><title>黑檀玩家主题</title>
+
+/* .outline-item:active, */
+/* .has-extra-menu:active, */
+a:active,
+.info-panel-tab-title:active {
+    animation: buttonClickAnimation 0.3s;
+}
+
+@keyframes buttonClickAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*滚动条*/
+::-webkit-scrollbar-thumb
+{
+  border-radius: 8px;
+  background-color: var(--scrollbar-color);
+}
+
+
+</style><title>切尔诺贝利主题</title>
 </head>
 <body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><h1 id='黑檀玩家主题'><span>黑檀玩家主题</span></h1><h2 id='简体中文--english'><span>简体中文 | </span><a href='/typora_theme_ebony/en/ebonygamer'><span>English</span></a></h2><blockquote><p><span>昏暗的房间，微弱的灯光，地上散落着几片残破的薯片袋和空空的饮料罐。屏幕上闪烁着绚丽的游戏画面，房间里弥漫着电子设备散发出的微弱热气和键盘敲击声。</span></p></blockquote><h2 id='特征'><span>特征</span></h2><ol start='' ><li><p><span>黑檀玩家主题是一款可用于展示的主题，具有十足的现代感。你可以将编写的文档导出为HTML放在网站上展示。</span></p></li><li><p><span>继承黑檀主题的优点，清晰易读且优雅。</span></p></li><li><p><span>该主题更易于修改和编辑。想换一个配色？只需改几行就行了。</span></p></li></ol><h2 id='使用说明'><span>使用说明</span></h2><ol start='' ><li><p><span>和黑檀主题不同，该主题有着更大的字体，并且不会缩放显示图片。</span></p></li></ol><h2 id='黑檀系列'><span>黑檀系列</span></h2><figure class='table-figure'><table><thead><tr><th style='text-align:center;' ><span>名称</span></th><th style='text-align:center;' ><span>黑檀主题</span></th><th style='text-align:center;' ><span>黑檀玩家主题</span></th><th style='text-align:center;' ><span>切尔诺贝利主题</span></th></tr></thead><tbody><tr><td style='text-align:center;' ><span>预览</span></td><td style='text-align:center;' ><img src="https://s2.loli.net/2024/02/18/fCkNEgublK8W4US.png" referrerpolicy="no-referrer" alt="屏幕截图 2024-02-18 185349.png"></td><td style='text-align:center;' ><img src="https://s2.loli.net/2024/02/18/4BFod6tCbnZRia7.png" referrerpolicy="no-referrer" alt="屏幕截图 2024-02-18 185213.png"></td><td style='text-align:center;' ><img src="https://s2.loli.net/2024/02/18/oNPgzh24mqs1caM.png" referrerpolicy="no-referrer" alt="屏幕截图 2024-02-18 185413.png"></td></tr><tr><td style='text-align:center;' ><span>用途</span></td><td style='text-align:center;' ><span>适合编辑和阅读</span></td><td style='text-align:center;' ><span>适合编辑，阅读和展示</span></td><td style='text-align:center;' ><span>适合编辑和展示</span></td></tr><tr><td style='text-align:center;' ><span>主页</span></td><td style='text-align:center;' ><a href='/typora_theme_ebony/zh/'><span>链接</span></a></td><td style='text-align:center;' ><a href='/typora_theme_ebony/zh/ebonygamer'><span>链接</span></a></td><td style='text-align:center;' ><a href='/typora_theme_ebony/zh/chernobyl'><span>链接</span></a></td></tr></tbody></table></figure></div></div>
+<div id='write'  class=''><h1 id='切尔诺贝利主题'><span>切尔诺贝利主题</span></h1><h2 id='简体中文--english'><span>简体中文 | </span><a href='/typora_theme_ebony/en/chernobyl'><span>English</span></a></h2><blockquote><p><span>前往险象环生的切尔诺贝利，穿越充满辐射的废墟，感受生命与毁灭的交织。</span></p></blockquote><h2 id='特征'><span>特征</span></h2><ol start='' ><li><p><span>充满</span><strong><span>现代感</span></strong><span>和</span><strong><span>科技感</span></strong><span>的</span><strong><span>Typora主题</span></strong><span>。从侧边栏到代码框再到右键菜单，含有大量毛玻璃效果。</span></p></li><li><p><span>包含两种不同的配色，神秘的</span><strong><span>蓝色主题</span></strong><span>和鲜亮的</span><strong><span>绿色主题</span></strong><span>！</span></p></li><li><p><span>在黑檀玩家主题的基础上重新设计而来，同样易于编辑改进。</span></p></li></ol><h2 id='使用说明'><span>使用说明</span></h2><ol start='' ><li><p><span>部分用户可能觉得该主题有点光污染，编辑的时候会分散注意力。你可以选择更温和的蓝色主题。绿色主题更适合放在网站上展示，能起到意想不到的作用。</span></p></li></ol><h2 id='黑檀系列'><span>黑檀系列</span></h2><figure class='table-figure'><table><thead><tr><th style='text-align:center;' ><span>名称</span></th><th style='text-align:center;' ><span>黑檀主题</span></th><th style='text-align:center;' ><span>黑檀玩家主题</span></th><th style='text-align:center;' ><span>切尔诺贝利主题</span></th></tr></thead><tbody><tr><td style='text-align:center;' ><span>预览</span></td><td style='text-align:center;' ><img src="https://s2.loli.net/2024/02/18/fCkNEgublK8W4US.png" referrerpolicy="no-referrer" alt="屏幕截图 2024-02-18 185349.png"></td><td style='text-align:center;' ><img src="https://s2.loli.net/2024/02/18/4BFod6tCbnZRia7.png" referrerpolicy="no-referrer" alt="屏幕截图 2024-02-18 185213.png"></td><td style='text-align:center;' ><img src="https://s2.loli.net/2024/02/18/oNPgzh24mqs1caM.png" referrerpolicy="no-referrer" alt="屏幕截图 2024-02-18 185413.png"></td></tr><tr><td style='text-align:center;' ><span>用途</span></td><td style='text-align:center;' ><span>适合编辑和阅读</span></td><td style='text-align:center;' ><span>适合编辑，阅读和展示</span></td><td style='text-align:center;' ><span>适合编辑和展示</span></td></tr><tr><td style='text-align:center;' ><span>主页</span></td><td style='text-align:center;' ><a href='/typora_theme_ebony/zh/'><span>链接</span></a></td><td style='text-align:center;' ><a href='/typora_theme_ebony/zh/ebonygamer'><span>链接</span></a></td><td style='text-align:center;' ><a href='/typora_theme_ebony/zh/chernobyl'><span>链接</span></a></td></tr></tbody></table></figure></div></div>
 </body>
 </html>
