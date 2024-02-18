@@ -1236,8 +1236,16 @@ footer.ty-footer {
     line-height: 26px;
 }
 
+/*滚动条*/
+
+::-webkit-scrollbar {
+    width: 8px;
+}  
+
 ::-webkit-scrollbar-thumb {
     background: rgba(230, 230, 230, 0.30);
+    border-radius: 3px;
+    background-color: var(--scrollbar-color);
 }
 
 ::-webkit-scrollbar-thumb:active {
@@ -1331,11 +1339,4 @@ a:active,
     100% {
         transform: scale(1);
     }
-}
-
-/*滚动条*/
-::-webkit-scrollbar-thumb
-{
-  border-radius: 8px;
-  background-color: var(--scrollbar-color);
 }
