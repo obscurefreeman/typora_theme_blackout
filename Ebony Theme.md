@@ -11,9 +11,9 @@
 3. **Extensive use of rounded corner design**, code blocks, pictures and scroll bars all have rounded corners, bringing comfortable and advanced visual effects.
 4. Use the fonts that come with the system to be **clear and legible** and refuse to be fancy.
 
-## Instructions for use
+## Instructions
 
-1. In order to improve the browsing experience, the ebony theme has deliberately reduced the font size. If you feel that the font size is too small for editing, please adjust it in `Preferences`-`Appearance`-`Font Size`, or use Ebony Gamer Theme, which has larger default font.
+1. To improve the browsing experience, the ebony theme has deliberately reduced the font size. If you feel that the font size is too small for editing, please adjust it in `Preferences`-`Appearance`-`Font Size`, or use Ebony Gamer Theme, which has larger default font.
 1. If you want to edit and modify this theme, please use the Ebony Gamer Theme as the standard, because this theme has undergone some fine-tuning for ease of use and recognition, which may cause you inconvenience.
 
 ## Ebony Series

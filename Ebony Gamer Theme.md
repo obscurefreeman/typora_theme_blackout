@@ -10,7 +10,7 @@
 1. Inheriting the advantages of the ebony theme, it is clear, easy to read and elegant.
 1. The theme is easier to modify and edit. Want to change the color scheme? Just change a few lines.
 
-## Instructions for use
+## Instructions
 
 1. Unlike the Ebony theme, this theme has larger fonts and does not scale the images.
 

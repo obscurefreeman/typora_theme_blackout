@@ -10,9 +10,9 @@
 1. It contains two different colors, the mysterious **blue theme** and the bright **green theme**!
 1. Redesigned based on the Ebony Gamer theme, it is also easy to edit and improve.
 
-## Instructions for use
+## Instructions
 
-1. Some users may feel that this theme has a bit of light pollution, which can be distracting when editing. You can choose the more subdued blue theme. The green theme is more suitable for display on the website and can play an unexpected role.
+1. Some users may feel that this theme has a bit of light-pollution, which can be distracting when editing. You can choose the more subdued blue theme. The green theme is more suitable for display on the website and can play an unexpected role.
 
 ## Ebony Series
 
