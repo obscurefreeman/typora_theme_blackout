@@ -1,6 +1,6 @@
 # 黑檀主题
 
-## 简体中文 | [English](README_zh)
+## 简体中文 | [English](README.md)
 
 > 清晰，高效，精美的**Typora主题**，根据我长期使用Typora的经验制成。
 
