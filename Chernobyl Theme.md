@@ -1,18 +1,18 @@
-# Ebony Gamer Theme
+# Chernobyl Theme
 
-## [简体中文](/typora_theme_ebony/zh/ebonygamer) | English
+## [简体中文](/typora_theme_ebony/zh/chernobyl) | English
 
-> Dim room, dim light, a few broken potato chip bags and empty drink cans scattered on the floor. The screen flashed with brilliant game graphics, and the room was filled with the faint heat from electronic devices and the sound of keyboard typing.
+> Travel to the **dangerous** Chernobyl, travel through the **radiated** ruins, and experience **The Intertwining of Life and Destruction**.
 
 ## Features
 
-1. The Ebony Player Theme is a theme that can be used for presentation and has a full modern feel. You can export the document you wrote as HTML and display it on the website.
-1. Inheriting the advantages of the ebony theme, it is clear, easy to read and elegant.
-1. The theme is easier to modify and edit. Want to change the color scheme? Just change a few lines.
+1. **A theme**  full of **modern sense** and **technological sense**. From the sidebar to the code blocks to the right-click menu, there are a lot of blur effects.
+1. It contains two different colors, the mysterious **blue theme** and the bright **green theme**!
+1. Redesigned based on the Ebony Gamer theme, it is also easy to edit and improve.
 
 ## Instructions for use
 
-1. Unlike the Ebony theme, this theme has larger fonts and does not scale the images.
+1. Some users may feel that this theme has a bit of light pollution, which can be distracting when editing. You can choose the more subdued blue theme. The green theme is more suitable for display on the website and can play an unexpected role.
 
 ## Ebony Series
 

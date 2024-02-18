@@ -342,38 +342,37 @@ mjx-container { break-inside: avoid; }
 @import "";
 
 :root {
-    --of-theme-color: #ff9100;
-    --of-theme-color-dark: #4b4b46;
-    --of-darkest-color: #2d2d2d;
-    --of-darker-color: #1e1e1e;
-    --of-dark-color: #292929;
-    --of-dark-color2: #202020;
-    --of-dark-color3:#404040;
-    --of-dark-color4:#232323;
-    --of-dark-color5:#222222;
-    --of-dark-color6:#1b1b1b;
+    --of-theme-color: #91ffc8;
+    /* --of-theme-color-dark: #2a3139; */
+    --of-theme-color-dark: #2a3932;
+    
+    --of-darkest-color: #101312;
+    --of-darker-color: #151a17;
+    --of-dark-color: #212b27;
+    --of-dark-color2: #1c211f;
     --of-strong: white;
-    --of-strong-code: #00ffa6;
-    --of-font-size: 15px; /*字体大小*/
+    --of-strong-code: #ff795e;
+    --of-font-size: 16.5px; /*字体大小*/
     --of-selection: #4a89dc;
     --of-selection-text: white;
-    --of-text-color: #c6c5b8;
+    --of-link-color: #91ffc8;
 
     --bg-color: var(--of-darker-color);
+    --bg-color-megamenu: #15171a;
     /* 侧边栏颜色 */
     --side-bar-bg-color: var(--of-darkest-color);
-    --text-color: var(--of-text-color);
+    --text-color: white;
     /* 这才是文字颜色 */
-    --text-color-main: var(--of-text-color);
+    --text-color-main: white;
     /* 选中文字的颜色 */
-    --select-text-bg-color: var(--of-theme-color-dark);
+    --select-text-bg-color: var(--of-selection);
     /* 被激活的目录背景 */
-    --item-hover-bg-color: var(--of-dark-color3);
+    --item-hover-bg-color:  var(--of-dark-color);
     --control-text-color: #b7b7b7;
     --control-text-hover-color: #fff;
     --window-border: 1px solid #333;
     /* 被激活的文件背景 */
-    --active-file-bg-color: var(--of-dark-color4);
+    --active-file-bg-color: var(--of-dark-color);
     --active-file-border-color: var(--of-theme-color);
     --primary-color: var(--of-theme-color);
     --active-file-text-color: #fff;
@@ -386,9 +385,9 @@ mjx-container { break-inside: avoid; }
     /* --code-bg-color: #31302e; */
     --footer-bg-color: var(--side-bar-bg-color);
     --table-bg-darker-color:   var(--of-dark-color2);
-    --table-bg-color:   var(--of-dark-color5);
+    --table-bg-color:   var(--of-dark-color);
     --table-bg-color2:   var(--of-darkest-color);
-    --table-thead-color: var(--of-dark-color6);
+    --table-thead-color: var(--of-darkest-color);
     --md-code-color: var(--of-strong-code);
     --table-edit-color: var(--of-darkest-color);
     --task-list-border-color: #ffffff;
@@ -420,8 +419,6 @@ mjx-container { break-inside: avoid; }
     --code-cursor-color: var(--of-theme-color);
     /* 返回按钮 */
     --back-btn-color: var(--of-theme-color);
-    /* 距离底部 */
-    --write-padding-bottom: 400px;
 
     --ofcodetext: Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
     --oftext: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -445,14 +442,37 @@ html,
 body {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    background: var(--bg-color);
+    /* background: var(--bg-color); */
+    background: 
+    linear-gradient(
+        to top,
+        rgba(0,0,0,0) 0%,
+        var(--bg-color) 100%
+    ),
+    radial-gradient(
+        circle at 50% 100%,
+        var(--of-theme-color-dark) 0%,
+        black 100%
+    );
+    background-attachment: fixed;
     fill: currentColor;
     line-height: var(--text-line-height);
 }
 
+#megamenu-content {
+    background-image:  url(file:///C://Users//Lenovo//AppData//Roaming//Typora/themes/obscurefreeman/background/chernobyl.png);
+    background-repeat: repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+
 #write {
     max-width: 914px;
-    padding-bottom: var(--write-padding-bottom);
+
+    /* background: none;
+
+    min-height: calc(100% - 48px); */
 }
 
 
@@ -479,6 +499,11 @@ div.code-tooltip-content {
     color: var(--text-color-main);
     border-color: transparent;
 }
+
+/* .code-tooltip input {
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
+} */
 
 div.code-tooltip,
 .md-hover-tip .md-arrow:after {
@@ -529,7 +554,7 @@ h1 {
     /* 36px */
     line-height: 2.75rem;
     /* 40px */
-    margin-bottom: var(--p-spacing);
+    margin-bottom: 1.5rem;
     /* 24px */
     letter-spacing: -1.5px;
 }
@@ -539,7 +564,7 @@ h2 {
     /* 24px */
     line-height: 1.875rem;
     /* 30px */
-    margin-bottom: var(--p-spacing);
+    margin-bottom: 1.5rem;
     /* 24px */
     letter-spacing: -1px;
     font-weight: bold;
@@ -550,7 +575,7 @@ h3 {
     /* 18px */
     line-height: 1.5rem;
     /* 24px */
-    margin-bottom: var(--p-spacing);
+    margin-bottom: 1.5rem;
     /* 24px */
     letter-spacing: -1px;
     font-weight: bold;
@@ -561,7 +586,7 @@ h4 {
     /* 16px */
     line-height: 1.375rem;
     /* 22px */
-    margin-bottom: var(--p-spacing);
+    margin-bottom: 1.5rem;
     /* 24px */
     color: white;
 }
@@ -571,7 +596,7 @@ h5 {
     /* 16px */
     line-height: 1.25rem;
     /* 22px */
-    margin-bottom: var(--p-spacing);
+    margin-bottom: 1.5rem;
     /* 24px */
     font-weight: bold;
 }
@@ -581,7 +606,7 @@ h6 {
     /* 16px */
     line-height: 1rem;
     /* 16px */
-    margin-bottom: var(--p-spacing);
+    margin-bottom: 0.75rem;
     color: white;
 }
 
@@ -589,17 +614,6 @@ img {
     border-radius: 8px;
     border-left: none !important;
     border-right: none !important;
-    max-width: 60%;
-    /* 居中 */
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
-}
-
-@media (max-width: 800px) {
-    img {
-        max-width: 100%;
-    }
 }
 
 @media (min-width: 980px) {
@@ -677,7 +691,7 @@ iframe,
 .wp-audio-shortcode,
 .wp-video-shortcode {
     margin-top: 0;
-    margin-bottom: var(--p-spacing);
+    margin-bottom: 1.5rem;
     /* 24px */
 }
 
@@ -739,41 +753,14 @@ cite {
 }
 
 blockquote {
-    padding: 20px;
-    position: relative;
-    border-radius: 8px;
-    border: 1px solid var(--primary-color);
-    /* background-color: var(--background-color); */
-    box-shadow: 0 2 px4px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    line-height: 1.5;
-    /* color: var(--text-color); */
-    color: white
-}
-
-blockquote::before {
-    content: "";
-    position: absolute;
-    top: -8px;
-    left: -8px;
-    width: 16px;
-    height: 16px;
-    border-radius: 5px;
-    background-color: var(--primary-color);
-    transform: rotate(45deg);
-}
-
-blockquote code {
-    display: block;
-    padding: 10px;
-    background-color: var(--code-bg-color);
-    /* color: var(--code-text-color); */
-    font-family: var(--text-font);
-    font-size: 12px;
-    line-height: 1.2;
-    overflow-x: auto;
-    border-radius: 4px;
-    margin-top: 10px;
+    /* padding-left: 1.875rem; */
+    margin: 2em 0;
+    border-left: solid 5px var(--other-main-color);
+    padding: 1.5em;
+    /* background: var(--blockquote-color); */
+    color: white;
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
 }
 
 pre,
@@ -790,6 +777,7 @@ tt,
 var {
     background: rgba(255, 255, 255, 0.05);
     color: var(--md-code-color);
+    /* box-shadow: 0 0 2px var(--md-code-color); */
     border-radius: 4px;
 }
 
@@ -812,13 +800,15 @@ pre.md-fences {
     padding: 0.5rem !important;
     border-radius: 8px;
     word-wrap: normal;
-    background-color: var(--code-bg-color);
+    background:none;
+    /* background-color: var(--code-bg-color); */
     border: none;
     font-family: var(--ofcodetext);
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
 }
 
 .CodeMirror-gutters {
-    background: var(--code-bg-color);
+    background: none;
     border-right: 1px solid transparent;
 }
 
@@ -841,6 +831,8 @@ table {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
 }
 
 th,
@@ -865,7 +857,7 @@ h1 {
 }
 
 a {
-    color: var(--primary-color);
+    color: var(--of-link-color);
     text-decoration: underline;
 }
 
@@ -887,6 +879,35 @@ table a {
     /* variable */
 }
 
+table tr {
+    border-top: 1px solid #212121;
+    margin: 0;
+    padding: 0;
+}
+table tr th {
+    font-weight: bold;
+    color: var(--other-main-color);
+    border: 1px solid #383838;
+    border-bottom: 0;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #383838;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
 /* th,
 td {
     border: solid 1px #544e47;
@@ -894,21 +915,21 @@ td {
 
 
 /* 设置表格头部行的样式 */
-th,
+/* th,
 
 th {
     background-color: var(--table-thead-color);
-}
+} */
 
 /* 设置奇偶行的背景颜色 */
 
-tr:nth-child(2n) {
+/* tr:nth-child(2n) {
     background-color: var(--table-bg-darker-color);
 }
 
 tr:nth-child(2n + 1) {
     background-color: var(--table-bg-color);
-}
+} */
 
 .task-list {
     padding-left: 0;
@@ -997,7 +1018,8 @@ tr:nth-child(2n + 1) {
     padding: 1rem;
     border-radius: 8px;
     line-height: 1.45;
-    background: transparent;
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
     font-family: var(--ofcodetext);
 }
 
@@ -1078,6 +1100,8 @@ tr:nth-child(2n + 1) {
     box-shadow: none;
     border-right: 1px dashed;
     border-right: none;
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
 }
 
 .sidebar-tabs {
@@ -1149,7 +1173,8 @@ h6.md-focus .md-attr,
 }
 
 .md-table-resize-popover {
-    background-color: var(--code-bg-color);
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
 }
 
 .form-inline .input-group .input-group-addon {
@@ -1163,9 +1188,11 @@ h6.md-focus .md-attr,
 /* 右键菜单和字数统计 */
 
 .context-menu,
-#spell-check-panel,
-#footer-word-count-info {
-    background-color:  var(--context-menu-color);
+#footer-word-count-info,
+#spell-check-panel {
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
+    background: none;
+    border-radius: 8px;
 }
 
 .context-menu.dropdown-menu .divider,
@@ -1180,7 +1207,6 @@ footer {
     backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
     border: none !important;
     background: none;
-    background-color: var(--footer-bg-color);
 }
 /* footer {
     color: inherit;
@@ -1202,7 +1228,7 @@ footer {
 
 .megamenu-content,
 .megamenu-opened header {
-    background: var(--bg-color);
+    background: var(--bg-color-megamenu);
 }
 
 .megamenu-menu-panel h2,
@@ -1226,16 +1252,17 @@ footer {
     border: 1px grey solid;
 }
 
-#recent-file-panel thead tr {
-    background-color: var(--table-thead-color);
+#recent-file-panel tbody {
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
 }
 
 #recent-file-panel tbody tr:nth-child(2n) {
-    background-color: var(--table-bg-darker-color);
+    background: none;
 }
 
 #recent-file-panel tbody tr:nth-child(2n + 1) {
-    background-color: var(--table-bg-color);
+    background: none;
 }
 
 
@@ -1280,7 +1307,9 @@ footer {
     background-color: rgb(0, 0, 0);
 } */
 .megamenu-menu {
-    background-color: var(--side-bar-bg-color);
+    /* background-color: var(--side-bar-bg-color); */
+    background: none;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
 }
 
 
@@ -1470,14 +1499,20 @@ footer {
     color: var(--tooltip-text-color);
 }
 
-/* 右键菜单按下 */
-.menu-item-container:hover {
+/* 右键菜单按下（暂时不用） */
+/* .menu-item-container:hover {
     background-color: var(--menu-item-container-btn-hover);
-}
+} */
+
+/* .menu-item-container:active {
+    animation: buttonClickAnimation 0.3s;
+} */
+
 
 /* 右键菜单按钮 */
 .menu-item-container a.menu-style-btn {
     /* background: var(--menu-item-container-btn); */
+    background: none;
     border: 1px solid;
     border-color: var(--menu-item-container-btn);
     border-radius: 5px;
@@ -1623,6 +1658,27 @@ footer.ty-footer {
 
 .cm-s-typora-default .cm-comment, .cm-s-typora-default .cm-code {
 	color: #e1bb8a;
+}
+
+
+
+/* .outline-item:active, */
+/* .has-extra-menu:active, */
+a:active,
+.info-panel-tab-title:active {
+    animation: buttonClickAnimation 0.3s;
+}
+
+@keyframes buttonClickAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 
