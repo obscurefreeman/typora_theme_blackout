@@ -20,7 +20,7 @@
 
 |   Name    |                            Ebony                             |                         Ebony Gamer                          |                          Chernobyl                           |
 | :-------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|  Preview  | ![屏幕截图 2024-02-18 185349.png](https://s2.loli.net/2024/02/18/fCkNEgublK8W4US.png) | ![屏幕截图 2024-02-18 185213.png](https://s2.loli.net/2024/02/18/4BFod6tCbnZRia7.png) | ![屏幕截图 2024-02-18 185413.png](https://s2.loli.net/2024/02/18/oNPgzh24mqs1caM.png) |
+|  Preview  | ![屏幕截图 2024-02-18 185349.png](https://github.com/obscurefreeman/typora_theme_ebony/assets/119153032/1965cfd5-2d4b-4422-86d1-11c225c399ee) | ![屏幕截图 2024-02-18 185213.png](https://github.com/obscurefreeman/typora_theme_ebony/assets/119153032/4e33cc82-2789-4df3-a388-e7d1599955ff) | ![屏幕截图 2024-02-18 185413.png](https://github.com/obscurefreeman/typora_theme_ebony/assets/119153032/4f0f41e3-2efe-4fa2-934c-1d714e2acc41) |
 |   Usage   |               Suitable for editing and reading               |        Suitable for editing, reading and presentation        |            Suitable for editing and presentation             |
 | Home Page | [Link](https://obscurefreeman.github.io/typora_theme_ebony/en/) | [Link](https://obscurefreeman.github.io/typora_theme_ebony/en/ebonygamer) | [Link](https://obscurefreeman.github.io/typora_theme_ebony/en/chernobyl) |
 
