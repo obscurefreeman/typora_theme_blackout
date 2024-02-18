@@ -6,7 +6,7 @@
 
 ## Features
 
-1. **A theme**  full of **modern sense** and **technological sense**. From the sidebar to the code blocks to the right-click menu, there are a lot of blur effects.
+1. **A theme** full of **modern sense** and **technological sense**. There are many blur effects, from the sidebar to the code blocks to the right-click menu.
 1. It contains two different colors, the mysterious **blue theme** and the bright **green theme**!
 1. Redesigned based on the Ebony Gamer theme, it is also easy to edit and improve.
 
@@ -21,3 +21,13 @@
 |  Preview  | ![屏幕截图 2024-02-18 185349.png](https://s2.loli.net/2024/02/18/fCkNEgublK8W4US.png) | ![屏幕截图 2024-02-18 185213.png](https://s2.loli.net/2024/02/18/4BFod6tCbnZRia7.png) | ![屏幕截图 2024-02-18 185413.png](https://s2.loli.net/2024/02/18/oNPgzh24mqs1caM.png) |
 |   Usage   |               Suitable for editing and reading               |        Suitable for editing, reading and presentation        |            Suitable for editing and presentation             |
 | Home Page |               [Link](/typora_theme_ebony/en/)                |          [Link](/typora_theme_ebony/en/ebonygamer)           |           [Link](/typora_theme_ebony/en/chernobyl)           |
+
+## Download
+
+[Github Release Page](https://github.com/obscurefreeman/typora_theme_ebony/releases)
+
+## Link
+
+- [Bilibili](https://github.com/obscurefreeman/typora_theme_ebony/releases)
+- [YouTube](https://www.youtube.com/channel/UCw_S5zgJ6ikGSXtFeAvVK8Q)
+- [Discord](https://discord.gg/zbX7nQa8xF)

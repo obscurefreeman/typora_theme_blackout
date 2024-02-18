@@ -21,3 +21,13 @@
 |  Preview  | ![屏幕截图 2024-02-18 185349.png](https://s2.loli.net/2024/02/18/fCkNEgublK8W4US.png) | ![屏幕截图 2024-02-18 185213.png](https://s2.loli.net/2024/02/18/4BFod6tCbnZRia7.png) | ![屏幕截图 2024-02-18 185413.png](https://s2.loli.net/2024/02/18/oNPgzh24mqs1caM.png) |
 |   Usage   |               Suitable for editing and reading               |        Suitable for editing, reading and presentation        |            Suitable for editing and presentation             |
 | Home Page |               [Link](/typora_theme_ebony/en/)                |          [Link](/typora_theme_ebony/en/ebonygamer)           |           [Link](/typora_theme_ebony/en/chernobyl)           |
+
+## Download
+
+[Github Release Page](https://github.com/obscurefreeman/typora_theme_ebony/releases)
+
+## Link
+
+- [Bilibili](https://github.com/obscurefreeman/typora_theme_ebony/releases)
+- [YouTube](https://www.youtube.com/channel/UCw_S5zgJ6ikGSXtFeAvVK8Q)
+- [Discord](https://discord.gg/zbX7nQa8xF)
