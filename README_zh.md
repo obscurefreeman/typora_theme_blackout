@@ -28,6 +28,8 @@
 
 [Github发布页面](https://github.com/obscurefreeman/typora_theme_blackout/releases)
 
+[123云盘](https://www.123pan.com/s/llEeVv-ESYYd.html)
+
 ## 作者链接
 
 - [Bilibili](https://space.bilibili.com/523837807)
