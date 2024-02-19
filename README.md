@@ -1,4 +1,4 @@
-# Ebony Theme
+# Blackout Theme
 
 ## [简体中文](README_zh.md) | English
 
@@ -13,20 +13,20 @@
 
 ## Instructions
 
-1. In order to improve the browsing experience, the ebony theme has deliberately reduced the font size. If you feel that the font size is too small for editing, please adjust it in `Preferences`-`Appearance`-`Font Size`, or use Ebony Gamer Theme, which has larger default font.
-2. If you want to edit and modify this theme, please use the Ebony Gamer Theme as the standard, because this theme has undergone some fine-tuning for ease of use and recognition, which may cause you inconvenience.
+1. In order to improve the browsing experience, the blackout theme has deliberately reduced the font size. If you feel that the font size is too small for editing, please adjust it in `Preferences`-`Appearance`-`Font Size`, or use Blackout Gamer Theme, which has larger default font.
+2. If you want to edit and modify this theme, please use the Blackout Gamer Theme as the standard, because this theme has undergone some fine-tuning for ease of use and recognition, which may cause you inconvenience.
 
-## Ebony Series
+## Blackout Series
 
-|   Name    |                            Ebony                             |                         Ebony Gamer                          |                          Chernobyl                           |
+|   Name    |                            Blackout                             |                         Blackout Gamer                          |                          Chernobyl                           |
 | :-------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|  Preview  | ![屏幕截图 2024-02-18 185349.png](https://github.com/obscurefreeman/typora_theme_ebony/assets/119153032/1965cfd5-2d4b-4422-86d1-11c225c399ee) | ![屏幕截图 2024-02-18 185213.png](https://github.com/obscurefreeman/typora_theme_ebony/assets/119153032/4e33cc82-2789-4df3-a388-e7d1599955ff) | ![屏幕截图 2024-02-18 185413.png](https://github.com/obscurefreeman/typora_theme_ebony/assets/119153032/4f0f41e3-2efe-4fa2-934c-1d714e2acc41) |
+|  Preview  | ![屏幕截图 2024-02-18 185349.png](https://github.com/obscurefreeman/typora_theme_blackout/assets/119153032/1965cfd5-2d4b-4422-86d1-11c225c399ee) | ![屏幕截图 2024-02-18 185213.png](https://github.com/obscurefreeman/typora_theme_blackout/assets/119153032/4e33cc82-2789-4df3-a388-e7d1599955ff) | ![屏幕截图 2024-02-18 185413.png](https://github.com/obscurefreeman/typora_theme_blackout/assets/119153032/4f0f41e3-2efe-4fa2-934c-1d714e2acc41) |
 |   Usage   |               Suitable for editing and reading               |        Suitable for editing, reading and presentation        |            Suitable for editing and presentation             |
-| Home Page | [Link](https://obscurefreeman.github.io/typora_theme_ebony/en/) | [Link](https://obscurefreeman.github.io/typora_theme_ebony/en/ebonygamer) | [Link](https://obscurefreeman.github.io/typora_theme_ebony/en/chernobyl) |
+| Home Page | [Link](https://obscurefreeman.github.io/typora_theme_blackout/en/) | [Link](https://obscurefreeman.github.io/typora_theme_blackout/en/blackoutgamer) | [Link](https://obscurefreeman.github.io/typora_theme_blackout/en/chernobyl) |
 
 ## Download
 
-[Github Release Page](https://github.com/obscurefreeman/typora_theme_ebony/releases)
+[Github Release Page](https://github.com/obscurefreeman/typora_theme_blackout/releases)
 
 ## Link
 

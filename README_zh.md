@@ -20,13 +20,13 @@
 
 | 名称 |                           黑檀主题                           |                         黑檀玩家主题                         |                        切尔诺贝利主题                        |
 | :--: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| 预览 | ![屏幕截图 2024-02-18 185349.png](https://github.com/obscurefreeman/typora_theme_ebony/assets/119153032/1965cfd5-2d4b-4422-86d1-11c225c399ee) | ![屏幕截图 2024-02-18 185213.png](https://github.com/obscurefreeman/typora_theme_ebony/assets/119153032/4e33cc82-2789-4df3-a388-e7d1599955ff) | ![屏幕截图 2024-02-18 185413.png](https://github.com/obscurefreeman/typora_theme_ebony/assets/119153032/4f0f41e3-2efe-4fa2-934c-1d714e2acc41) |
+| 预览 | ![屏幕截图 2024-02-18 185349.png](https://github.com/obscurefreeman/typora_theme_blackout/assets/119153032/1965cfd5-2d4b-4422-86d1-11c225c399ee) | ![屏幕截图 2024-02-18 185213.png](https://github.com/obscurefreeman/typora_theme_blackout/assets/119153032/4e33cc82-2789-4df3-a388-e7d1599955ff) | ![屏幕截图 2024-02-18 185413.png](https://github.com/obscurefreeman/typora_theme_blackout/assets/119153032/4f0f41e3-2efe-4fa2-934c-1d714e2acc41) |
 | 用途 |                        适合编辑和阅读                        |                     适合编辑，阅读和展示                     |                        适合编辑和展示                        |
-| 主页 | [链接](https://obscurefreeman.github.io/typora_theme_ebony/zh/) | [链接](https://obscurefreeman.github.io/typora_theme_ebony/zh/ebonygamer) | [链接](https://obscurefreeman.github.io/typora_theme_ebony/zh/chernobyl) |
+| 主页 | [链接](https://obscurefreeman.github.io/typora_theme_blackout/zh/) | [链接](https://obscurefreeman.github.io/typora_theme_blackout/zh/blackoutgamer) | [链接](https://obscurefreeman.github.io/typora_theme_blackout/zh/chernobyl) |
 
 ## 下载
 
-[Github发布页面](https://github.com/obscurefreeman/typora_theme_ebony/releases)
+[Github发布页面](https://github.com/obscurefreeman/typora_theme_blackout/releases)
 
 ## 作者链接
 
