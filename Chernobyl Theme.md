@@ -4,6 +4,8 @@
 
 > Travel to the **dangerous** Chernobyl, travel through the **radiated** ruins, and experience **The Intertwining of Life and Destruction**.
 
+![2023-10 54](https://github.com/obscurefreeman/typora_theme_blackout/assets/119153032/83ac9a81-1794-4df7-8397-d8a082943cc9)
+
 ## Features
 
 1. **A theme** full of **modern sense** and **technological sense**. There are many blur effects, from the sidebar to the code blocks to the right-click menu.
