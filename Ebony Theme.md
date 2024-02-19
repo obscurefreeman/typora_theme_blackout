@@ -6,7 +6,7 @@
 
 ## Features
 
-1. After half a year of polishing, the theme is perfect, with **beautiful interface** and **suitable for mega menu**.
+1. After half a year of polishing, the theme is perfect, with a **beautiful interface** and **suitable for Windows “unibody” style.**
 2. **Clear text and eye-friendly**, inserted pictures will be scaled to the appropriate size, saving space and allowing you to see more content. After the page is scrolled, you can still scroll down a certain distance, which solves the problem of needing to stare at the lower part of the page when using other themes. Very suitable for college students to write papers.
 3. **Extensive use of rounded corner design**, code blocks, pictures and scroll bars all have rounded corners, bringing comfortable and advanced visual effects.
 4. Use the fonts that come with the system to be **clear and legible** and refuse to be fancy.
