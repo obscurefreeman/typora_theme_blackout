@@ -13,6 +13,13 @@
 
 ## Instructions
 
+### Installation
+
+1. Download the zip package from [Github Release Page](https://github.com/obscurefreeman/typora_theme_blackout/releases), then extract to the local.
+2. In Typora, `Preferences`-`Appearance`-`Open Theme Folder`, copy **all files** extracted in the previous step to the current path. Restart Typora, `Preferences`-`Appearance`-`Themes`, select `Blackout`.
+
+### Custom
+
 1. In order to improve the browsing experience, the blackout theme has deliberately reduced the font size. If you feel that the font size is too small for editing, please adjust it in `Preferences`-`Appearance`-`Font Size`, or use Blackout Gamer Theme, which has larger default font.
 2. If you want to edit and modify this theme, please use the Blackout Gamer Theme as the standard, because this theme has undergone some fine-tuning for ease of use and recognition, which may cause you inconvenience.
 
