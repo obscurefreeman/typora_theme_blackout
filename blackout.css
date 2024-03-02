@@ -442,7 +442,7 @@ kbd,
 tt,
 var {
     font-size: 0.875em;
-    font-family: var(--text-font);
+    font-family: var(--ofcodetext);
 }
 
 code,
