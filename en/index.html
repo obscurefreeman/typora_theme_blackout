@@ -521,68 +521,47 @@ h6 {
     word-wrap: break-word;
     margin: 0;
     padding: 0;
-    color: #DEDEDE
+    color: white;
+    line-height: 1.4;
 }
 
 h1 {
     font-size: 2.5rem;
-    /* 36px */
-    line-height: 2.75rem;
-    /* 40px */
     margin-bottom: var(--p-spacing);
-    /* 24px */
     letter-spacing: -1.5px;
+    border-bottom: 1px solid #383838;
+    margin-top: 1em;
 }
 
 h2 {
     font-size: 1.63rem;
-    /* 24px */
-    line-height: 1.875rem;
-    /* 30px */
     margin-bottom: var(--p-spacing);
-    /* 24px */
     letter-spacing: -1px;
     font-weight: bold;
 }
 
 h3 {
-    font-size: 1.17rem;
-    /* 18px */
-    line-height: 1.5rem;
-    /* 24px */
+    font-size: 1.6rem;
     margin-bottom: var(--p-spacing);
-    /* 24px */
     letter-spacing: -1px;
     font-weight: bold;
 }
 
 h4 {
     font-size: 1.12rem;
-    /* 16px */
-    line-height: 1.375rem;
-    /* 22px */
     margin-bottom: var(--p-spacing);
-    /* 24px */
-    color: white;
 }
 
 h5 {
     font-size: 0.97rem;
-    /* 16px */
-    line-height: 1.25rem;
-    /* 22px */
     margin-bottom: var(--p-spacing);
-    /* 24px */
     font-weight: bold;
 }
 
 h6 {
     font-size: 0.93rem;
-    /* 16px */
-    line-height: 1rem;
-    /* 16px */
     margin-bottom: var(--p-spacing);
-    color: white;
+    color: #d3d3d3;
 }
 
 img {
@@ -590,10 +569,6 @@ img {
     border-left: none !important;
     border-right: none !important;
     max-width: 60%;
-    /* 居中 */
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
 }
 
 @media (max-width: 800px) {
@@ -782,7 +757,7 @@ kbd,
 tt,
 var {
     font-size: 0.875em;
-    font-family: var(--text-font);
+    font-family: var(--ofcodetext);
 }
 
 code,
@@ -860,10 +835,6 @@ hr {
     /* variable */
 }
 
-h1 {
-    margin-top: 1em;
-}
-
 a {
     color: var(--primary-color);
     text-decoration: underline;
@@ -883,8 +854,37 @@ mark {
 }
 
 table a {
-    color: #DEDEDE;
+    color: var(--primary-color);
     /* variable */
+}
+
+table tr {
+    border-top: 1px solid #212121;
+    margin: 0;
+    padding: 0;
+}
+table tr th {
+    font-weight: bold;
+    color: var(--other-main-color);
+    border: 1px solid #383838;
+    border-bottom: 0;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #383838;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
 }
 
 /* th,
@@ -1217,9 +1217,13 @@ footer {
     border-bottom: 1px solid;
 }
 
+#recent-document-table {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
 #recent-file-panel {
     padding: 10px;
-  }
+}
 
 #recent-file-panel-action-btn {
     background: inherit;
@@ -1497,6 +1501,8 @@ footer {
 footer.ty-footer {
     border-color: var(--select-background);
 }
+
+/* 偏好 */
 
 .ty-preferences .btn-default {
     background: transparent;
