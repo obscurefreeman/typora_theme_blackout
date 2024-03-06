@@ -214,7 +214,7 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: var(--p-spacing);
     letter-spacing: -1.5px;
-    border-bottom: 1px solid #383838;
+    /* border-bottom: 1px solid #383838; */
     margin-top: 1em;
 }
 
