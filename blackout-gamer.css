@@ -75,6 +75,8 @@
     --code-cursor-color: var(--of-theme-color);
     /* 返回按钮 */
     --back-btn-color: var(--of-theme-color);
+    /* 高亮文字颜色 */
+    --highlight-text-color: var(--of-darker-color);
 
     --ofcodetext: Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
     --oftext: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -372,7 +374,7 @@ code,
 kbd,
 tt,
 var {
-    font-size: 0.875em;
+    font-size: 0.9rem;
     font-family: var(--ofcodetext);
 }
 
@@ -381,7 +383,7 @@ tt,
 var {
     background: rgba(255, 255, 255, 0.05);
     color: var(--md-code-color);
-    border-radius: 4px;
+    border-radius: 0.2rem;
 }
 
 kbd {
@@ -424,7 +426,7 @@ code,
 kbd,
 tt,
 var {
-    padding: 2px 5px;
+    padding: 0.2rem 0.4rem;
 }
 
 table {
@@ -464,9 +466,33 @@ a:hover {
     color: #81b1db;
 }
 
+/* 高亮颜色 */
+
 mark {
     background: var(--other-main-color);
     /* color: white; */
+    color: var(--highlight-text-color);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.2rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+mark a,
+mark .md-content.md-url {
+    color: var(--highlight-text-color);
+}
+
+mark a:hover {
+    color: white;
+}
+
+mark code {
+    color: var(--highlight-text-color);
+    border-radius: 0.2rem;
+    border: 1px solid var(--highlight-text-color);
+    background: none;
+    padding: 0.1rem 0.35rem;
 }
 
 table a {
@@ -738,13 +764,16 @@ h6.md-focus .md-attr,
     background: black;
 }
 
+/* 退出菜单 */
+
 .modal-content {
     background: var(--bg-color);
-    border: 0;
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
 .modal-title {
-    font-size: 1.5em;
+    font-size: 2.5rem;
 }
 
 .modal-content input {
@@ -762,6 +791,12 @@ h6.md-focus .md-attr,
 
 .modal-content .btn-primary {
     border-color: var(--primary-color);
+}
+
+.modal-open .modal.fade.in {
+    background: none;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .md-table-resize-popover {
@@ -822,9 +857,23 @@ footer {
 }
 
 .megamenu-menu-panel h2,
-.megamenu-menu-panel h1,
-.long-btn {
+.megamenu-menu-panel h1 {
     color: inherit;
+}
+
+.long-btn {
+    margin-bottom: 12px;
+    margin-left: 2px;
+    background-color: var(--of-darkest-color);
+    border: none;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.long-btn:hover {
+    background-color: var(--other-main-color);
+    color: white !important ;
 }
 
 .megamenu-menu-panel input[type='text'] {
@@ -864,6 +913,7 @@ footer {
 .modal-footer .btn-default:not(:hover) {
     border: 1px solid;
     border-color: transparent;
+    border-radius: 0.3rem !important;
 }
 
 /* #recent-file-panel-action-btn:hover {
@@ -908,13 +958,22 @@ footer {
 
 
 .btn-primary {
+    border: none;
+    border-radius: 0.3rem;
+    background-color: var(--other-main-color);
+    color: white !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
     color: white;
+    background-color: var(--of-theme-color-dark) !important;
 }
 
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
-    color: white;
-    border: 1px solid #ddd;
-    background-color: inherit;
+    /* color: white;
+    border: 1px solid #ddd; */
+    background-color: var(--of-theme-color-dark);
 }
 
 .modal-header {
