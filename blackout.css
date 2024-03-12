@@ -560,6 +560,13 @@ table tr td:last-child {
     margin-bottom: 0;
 }
 
+table img {
+    border-radius: 8px;
+    border-left: none !important;
+    border-right: none !important;
+    max-width: 100%;
+}
+
 /* th,
 td {
     border: solid 1px #544e47;
