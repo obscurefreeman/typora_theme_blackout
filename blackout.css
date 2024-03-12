@@ -80,6 +80,8 @@
     --code-cursor-color: var(--of-theme-color);
     /* 返回按钮 */
     --back-btn-color: var(--of-theme-color);
+    /* 高亮文字颜色 */
+    --highlight-text-color: var(--of-darker-color);
     /* 距离底部 */
     --write-padding-bottom: 400px;
 
@@ -413,7 +415,7 @@ tt,
 var {
     background: rgba(255, 255, 255, 0.05);
     color: var(--md-code-color);
-    border-radius: 4px;
+    border-radius: 0.2rem;
 }
 
 kbd {
@@ -456,7 +458,7 @@ code,
 kbd,
 tt,
 var {
-    padding: 2px 5px;
+    padding: 0.2rem 0.4rem;
 }
 
 table {
@@ -496,9 +498,32 @@ a:hover {
     color: #81b1db;
 }
 
+/* 高亮颜色 */
+
 mark {
     background: var(--other-main-color);
-    /* color: white; */
+    color: var(--highlight-text-color);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.2rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+mark a,
+mark .md-content.md-url {
+    color: var(--highlight-text-color);
+}
+
+mark a:hover {
+    color: white;
+}
+
+mark code {
+    color: var(--highlight-text-color);
+    border-radius: 0.2rem;
+    border: 1px solid var(--highlight-text-color);
+    background: none;
+    padding: 0.1rem 0.35rem;
 }
 
 table a {
