@@ -865,7 +865,7 @@ footer {
     margin-bottom: 12px;
     margin-left: 2px;
     background-color: var(--of-darkest-color);
-    border: none;
+    border: 1px solid #383838;
     border-radius: 0.3rem;
     padding: 1rem;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
@@ -873,7 +873,11 @@ footer {
 
 .long-btn:hover {
     background-color: var(--other-main-color);
-    color: white !important ;
+    color: black !important ;
+}
+
+#m-import-local:hover .preference-item-hint {
+    color: black !important ;
 }
 
 .megamenu-menu-panel input[type='text'] {
