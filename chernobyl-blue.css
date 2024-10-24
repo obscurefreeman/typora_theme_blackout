@@ -39,7 +39,8 @@
     --item-hover-text-color: #fff;
     /* 编辑HTML文件 */
     --rawblock-edit-panel-bd: var(--of-dark-color);
-    --search-select-bg-color: #3c3c3c;
+    --search-select-bg-color: var(--of-theme-color);
+    --search-select-text-color: black;
     
     --code-bg-color:  var(--of-dark-color);
     /* --code-bg-color: #31302e; */
@@ -1304,8 +1305,8 @@ footer.ty-footer {
 }
 
 .md-search-hit {
-    background:  var(--select-background);
-    color: white;
+    background:  var(--search-select-bg-color);
+    color: var(--search-select-text-color);
 }
 
 .md-search-hit * {
