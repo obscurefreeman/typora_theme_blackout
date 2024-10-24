@@ -977,6 +977,7 @@ footer {
 
 .megamenu-menu-header:hover {
     background-color: var(--item-hover-bg-color);
+    border-radius: 5px;
 }
 
 .megamenu-menu-panel .dropdown-menu > li > a {
@@ -1011,6 +1012,10 @@ footer {
     line-height: 34px;
     margin-inline: 10px;
     margin-top: 5px;
+}
+
+.megamenu-menu-list :hover {
+    font-size: 20px;
 }
 
 /* 消除左侧遮挡动画的部分 */
