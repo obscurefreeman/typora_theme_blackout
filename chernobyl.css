@@ -1222,6 +1222,10 @@ footer {
     border-radius: 5px;
 }
 
+.outline-active {
+    color: var(--primary-color);
+}
+
 .md-task-list-item>input {
     margin-left: -1.3em;
     margin-top: 0.3rem;
