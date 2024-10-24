@@ -735,12 +735,6 @@ tr:nth-child(2n + 1) {
     color: inherit;
 }
 
-.outline-item:hover {
-    border-color: var(--item-hover-bg-color);
-    background-color: var(--item-hover-bg-color);
-    color: white;
-}
-
 h1.md-focus .md-attr,
 h2.md-focus .md-attr,
 h3.md-focus .md-attr,
@@ -1120,6 +1114,7 @@ footer {
 
 .file-list-item {
     border-bottom:none;
+    padding: 8px;
 }
 
 .file-list-item-summary {
@@ -1144,9 +1139,16 @@ footer {
     background-color: rgb(34, 34, 34);
     background-color: var(--active-file-bg-color);
 }
+
+#file-library-list, #file-library-search-result {
+    padding: 12px;
+}
+
 .file-list-item.active {
-    background-color: rgb(34, 34, 34);
     background-color: var(--active-file-bg-color);
+    border-radius: 5px;
+    /* border: 1px solid var(--primary-color); */
+    box-shadow: 0 2 px4px rgba(0, 0, 0, 0.1);
 }
 
 #ty-tooltip {
@@ -1169,6 +1171,24 @@ footer {
 
 .outline-active {
     color: var(--primary-color);
+}
+
+.outline-content {
+    padding: 12px;
+}
+.outline-content li .outline-item {
+    margin: 1px;
+    padding: 4px 8px;
+    position: relative;
+    z-index: 50;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.outline-item:hover {
+    border-color: var(--item-hover-bg-color);
+    background-color: var(--item-hover-bg-color);
+    color: white;
 }
 
 .md-task-list-item>input {
