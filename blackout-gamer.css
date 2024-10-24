@@ -33,6 +33,8 @@
     --primary-color: var(--of-theme-color);
     --active-file-text-color: #fff;
     --item-hover-text-color: #fff;
+    /* 激活的文字颜色 */
+    --active-text-color: var(--of-theme-color);
     /* 编辑HTML文件 */
     --rawblock-edit-panel-bd: var(--of-dark-color);
     --search-select-bg-color: var(--of-theme-color);
@@ -1115,6 +1117,7 @@ footer {
 .file-list-item {
     border-bottom:none;
     padding: 8px;
+    border-radius: 5px;
 }
 
 .file-list-item-summary {
@@ -1131,7 +1134,6 @@ footer {
 
 .file-library-node.active>.file-node-content,
 .file-list-item.active {
-    color: white;
     color: var(--active-file-text-color);
 }
 
@@ -1146,9 +1148,12 @@ footer {
 
 .file-list-item.active {
     background-color: var(--active-file-bg-color);
-    border-radius: 5px;
     /* border: 1px solid var(--primary-color); */
     box-shadow: 0 2 px4px rgba(0, 0, 0, 0.1);
+}
+
+.file-list-item:hover{
+    color:var(--active-text-color);
 }
 
 #ty-tooltip {
