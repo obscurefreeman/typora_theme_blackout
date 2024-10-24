@@ -928,9 +928,12 @@ footer {
     color: var(--back-btn-color);
 }
 
+.megamenu-menu-header {
+    transition-duration: 0.3s;
+}
+
 .megamenu-menu-header:hover {
     background-color: var(--item-hover-bg-color);
-    border-radius: 5px;
 }
 
 .megamenu-menu-panel .dropdown-menu > li > a {
