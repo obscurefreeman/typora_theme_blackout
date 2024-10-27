@@ -22,6 +22,8 @@
     --bg-color: var(--of-darker-color);
     /* 侧边栏颜色 */
     --side-bar-bg-color: var(--of-darkest-color);
+    /* 快速菜单 */
+    --quickopen-bg-color: var(--of-darkest-color);
     --text-color: var(--of-text-color);
     /* 这才是文字颜色 */
     --text-color-main: var(--of-text-color);
@@ -632,18 +634,19 @@ tr:nth-child(2n + 1) {
 
 
 
-/** quick open **/
+/** ctrl+p 快速打开 **/
 .auto-suggest-container {
     border: 0px;
-    background-color: var(--select-background);
+    background-color: var(--quickopen-bg-color);
 }
 
 #typora-quick-open {
-    background-color: var(--select-background);
+    background-color: var(--quickopen-bg-color);
+    border-radius: 5px;
 }
 
 #typora-quick-open input{
-    background-color: var(--select-background);
+    background-color: var(--quickopen-bg-color);
     border: 0;
     border-bottom: 1px solid grey;
 }
@@ -651,16 +654,16 @@ tr:nth-child(2n + 1) {
 .typora-quick-open-item {
     background-color: inherit;
     color: inherit;
+    border-radius: 5px;
+    margin: 5px;
 }
 
-.typora-quick-open-item.active,
-.typora-quick-open-item:hover {
-    background-color: var(--other-main-color);
-    color: white;
+.typora-quick-open-item.active {
+    color: var(--active-text-color);
 }
 
 .typora-quick-open-item:hover {
-    background-color:  var(--of-theme-color-dark);
+    background-color:  var(--item-hover-bg-color);
 }
 
 .typora-search-spinner > div {
@@ -1258,7 +1261,7 @@ footer {
 }
 .outline-content li .outline-item {
     margin: 1px;
-    padding: 4px 8px;
+    /* padding: 4px 8px; */
     position: relative;
     z-index: 50;
     border-radius: 5px;
@@ -1269,6 +1272,30 @@ footer {
     border-color: var(--item-hover-bg-color);
     background-color: var(--item-hover-bg-color);
     color: white;
+}
+
+.outline-h1>.outline-item {
+    padding-left: 1em;
+}
+
+.outline-h2>.outline-item {
+    padding-left: 2em;
+}
+
+.outline-h3>.outline-item {
+    padding-left: 3em;
+}
+
+.outline-h4>.outline-item {
+    padding-left: 4em;
+}
+
+.outline-h5>.outline-item {
+    padding-left: 5em;
+}
+
+.outline-h6>.outline-item {
+    padding-left: 6em;
 }
 
 .md-task-list-item>input {
