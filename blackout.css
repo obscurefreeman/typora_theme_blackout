@@ -1013,6 +1013,24 @@ footer {
     font-size: 20px;
 }
 
+/* 图标 */
+
+.megamenu-menu-list li a .fa {
+    line-height: 38px;
+    display: inline-block;
+    margin-left: 0;
+    opacity: 1;
+}
+.megamenu-menu-list li #m-saved .fa {
+    line-height: 36px !important;
+}
+
+.megamenu-menu-list li #m-saved .fa {
+    line-height: 36px !important;
+}
+
+
+
 /* 消除左侧遮挡动画的部分 */
 
 .megamenu-menu-panel {
