@@ -643,8 +643,9 @@ tr:nth-child(2n + 1) {
 }
 
 #typora-quick-open {
-    background-color: var(--quickopen-bg-color);
+    background: none;
     border-radius: 5px;
+    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
 }
 
 #typora-quick-open input{
@@ -1020,7 +1021,13 @@ footer {
     margin-top: 5px;
 }
 
-.megamenu-menu-list :hover {
+/* .megamenu-menu-list :hover {
+    font-size: 20px;
+} */
+.megamenu-menu-list li a.active {
+    background-color: var(--item-hover-bg-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     font-size: 20px;
 }
 
