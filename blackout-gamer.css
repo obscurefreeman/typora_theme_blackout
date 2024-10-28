@@ -82,6 +82,8 @@
     --back-btn-color: var(--of-theme-color);
     /* 高亮文字颜色 */
     --highlight-text-color: var(--of-darker-color);
+    /* 距离底部 */
+    --write-padding-bottom: 100px;
 
     --ofcodetext: Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
     --oftext: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -112,6 +114,7 @@ body {
 
 #write {
     max-width: 914px;
+    padding-bottom: var(--write-padding-bottom);
 }
 
 
