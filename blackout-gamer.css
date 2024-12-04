@@ -831,7 +831,7 @@ h6.md-focus .md-attr,
 /* 页尾模糊 */
 
 footer {
-    backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
+    backdrop-filter: saturate(120%) blur(7px) brightness(0.85);
     border: none !important;
     background: none;
     background-color: var(--footer-bg-color);
@@ -1212,6 +1212,12 @@ footer {
     padding: 12px;
 }
 
+/* 搜索框圆角 */
+
+input#file-library-search-input {
+    border-radius: 5px;
+}
+
 .file-list-item.active {
     background-color: var(--active-file-bg-color);
     /* border: 1px solid var(--primary-color); */
@@ -1284,6 +1290,12 @@ footer {
 
 .outline-h6>.outline-item {
     padding-left: 6em;
+}
+
+/* 移除下划线 */
+
+.outline-label:hover {
+    text-decoration: none;
 }
 
 .md-task-list-item>input {
