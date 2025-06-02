@@ -1352,11 +1352,13 @@ footer.ty-footer {
     height: 21px;
 }
 
-.ty-preferences .nav-group-item.active,
+.ty-preferences .nav-group-item.active{
+    background: var(--item-hover-bg-color);
+}
 .export-item.active,
 .export-items-list-control,
 .export-detail {
-    background: var(--item-hover-bg-color);
+    background: transparent !important;
 }
 
 .ty-preferences input[type="search"] {
